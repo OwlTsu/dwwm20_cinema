@@ -18,5 +18,5 @@ $keywords = "accueil, film, liste";
 
 <?php
 require __DIR__ . "/../partials/footer.php";
-require __DIR__ . "/../partials/script_foot.php";
+require __DIR__ . "/../partials/scripts_foot.php";
 ?>

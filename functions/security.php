@@ -31,25 +31,22 @@ function isCsrfTokenValid(string $postCsrfToken, string $sessionCsrfToken): bool
     unset($_SESSION['csrf_token']);
     unset($_POST['csrf_token']);
     return true;
-}
-
-
+};
 
 /**
- * Protège le système contre les robots spameurs.
+ * Protège le système des robots spamers.
  *
  * @param string $honeyPotValue
- * @return boolean retourne true si le pot de miel est léché et false dans le cas contraire.
+ * @return boolean retourne true si le pot de miel est léché et false dans le cas contaire.
  */
 function isHoneyPotLiked(string $honeyPotValue): bool
 {
-    if (! isset($honeyPotValue)) {
+    if (!isset($honeyPotValue)) {
         return true;
     }
 
-    if ($honeyPotValue !== "") {
+    if (($honeyPotValue !== "")) {
         return true;
     }
-
     return false;
-}
+};
