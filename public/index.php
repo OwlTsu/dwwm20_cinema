@@ -49,8 +49,8 @@ $films = $request->fetchAll();
                             <hr>
                             <div>
                                 <a class="text-dark" data-bs-toggle="modal" data-bs-target="#modal-<?= $film['id'] ?>" href="#"><i class="fa-solid fa-eye"></i></a>
-                                <!-- <a href="" class="btn btn-secondary">Modifier</a>
-                                    <a href="" class="btn btn-danger">Supprimer</a> -->
+                                <a href="edit.php" class="btn btn-secondary">Modifier</a>
+                                <a href="delete.php" class="btn btn-danger">Supprimer</a>
                             </div>
                         </div>
 
